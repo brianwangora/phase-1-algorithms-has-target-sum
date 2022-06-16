@@ -1,5 +1,13 @@
 function hasTargetSum(array, target) {
-  // Write your algorithm here
+  for (let i = 0; i < array.length; i++) {
+    const remainder = target - array[i]
+  for (let j = i + 1; j < array.length; j++) {
+      if (array[j] === remainder) {
+        return true
+      } 
+    }
+   }
+   return false
 }
 
 /* 
@@ -8,6 +16,9 @@ function hasTargetSum(array, target) {
 
 /* 
   Add your pseudocode here
+  loop through array and pick two numbers
+  if the sume of these two numbers is equal to target return true
+  if not return false
 */
 
 /*
