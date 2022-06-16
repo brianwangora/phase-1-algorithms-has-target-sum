@@ -16,9 +16,10 @@ function hasTargetSum(array, target) {
 
 /* 
   Add your pseudocode here
-  loop through array and pick two numbers
-  if the sume of these two numbers is equal to target return true
-  if not return false
+  loop through array and pick a number.
+  subtract this number from the target and find a remainder
+  loop through the array again and find value that equals the remainder
+  if we reach the end of the array meaning no remainder was found, return false
 */
 
 /*
